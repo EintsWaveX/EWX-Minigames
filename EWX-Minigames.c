@@ -334,20 +334,20 @@ void Mini2DObstaclesDemoWindow(void) {
     Vector2 SpikesSizeV1_01         = {.x = (GetScreenWidth()/4.0f) + 0.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeHeight60Deg};
     Vector2 SpikesSizeV2_01         = {.x = (GetScreenWidth()/4.0f) - 30.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeWidth};
     Vector2 SpikesSizeV3_01         = {.x = (GetScreenWidth()/4.0f) + 30.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeWidth};
-    Vector2 SpikesHitboxSize_01     = {.x = SpikeWidth/2.0f, .y = SpikeWidth};
-    Vector2 SpikesHitboxPosition_01 = {.x = (SpikesSizeV2_01.x + SpikesHitboxSize_01.x) - (SpikeWidth/4.0f), .y = SpikesSizeV2_01.y - SpikeWidth + 5.0f};
+    Vector2 SpikesHitboxSize_01     = {.x = SpikeWidth/2.0f, .y = (SpikeWidth - (SpikeHeight60Deg))};
+    Vector2 SpikesHitboxPosition_01 = {.x = (SpikesSizeV2_01.x + SpikesHitboxSize_01.x) - (SpikeWidth/4.0f), .y = SpikesSizeV2_01.y - SpikesHitboxSize_01.y};
 
     Vector2 SpikesSizeV1_02         = {.x = (GetScreenWidth()/4.0f + 60.0f) + 0.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeHeight60Deg};
     Vector2 SpikesSizeV2_02         = {.x = (GetScreenWidth()/4.0f + 60.0f) - 30.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeWidth};
     Vector2 SpikesSizeV3_02         = {.x = (GetScreenWidth()/4.0f + 60.0f) + 30.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeWidth};
-    Vector2 SpikesHitboxSize_02     = {.x = SpikeWidth/2.0f, .y = SpikeWidth};
-    Vector2 SpikesHitboxPosition_02 = {.x = (SpikesSizeV2_02.x + SpikesHitboxSize_02.x) - (SpikeWidth/4.0f), .y = SpikesSizeV2_02.y - SpikeWidth + 5.0f};
+    Vector2 SpikesHitboxSize_02     = {.x = SpikeWidth/2.0f, .y = (SpikeWidth - (SpikeHeight60Deg))};
+    Vector2 SpikesHitboxPosition_02 = {.x = (SpikesSizeV2_02.x + SpikesHitboxSize_02.x) - (SpikeWidth/4.0f), .y = SpikesSizeV2_02.y - SpikesHitboxSize_02.y};
 
     Vector2 SpikesSizeV1_03         = {.x = (GetScreenWidth()/1.5f + 90.0f) + 0.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeHeight60Deg};
     Vector2 SpikesSizeV2_03         = {.x = (GetScreenWidth()/1.5f + 90.0f) - 30.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeWidth};
     Vector2 SpikesSizeV3_03         = {.x = (GetScreenWidth()/1.5f + 90.0f) + 30.0f, .y = ((PlatformPosition.y - 75.0f) + 15.0f) + SpikeWidth};
-    Vector2 SpikesHitboxSize_03     = {.x = SpikeWidth/2.0f, .y = SpikeWidth};
-    Vector2 SpikesHitboxPosition_03 = {.x = (SpikesSizeV2_03.x + SpikesHitboxSize_03.x) - (SpikeWidth/4.0f), .y = SpikesSizeV2_03.y - SpikeWidth + 5.0f};
+    Vector2 SpikesHitboxSize_03     = {.x = SpikeWidth/2.0f, .y = (SpikeWidth - (SpikeHeight60Deg))};
+    Vector2 SpikesHitboxPosition_03 = {.x = (SpikesSizeV2_03.x + SpikesHitboxSize_03.x) - (SpikeWidth/4.0f), .y = SpikesSizeV2_03.y - SpikesHitboxSize_03.y};
 
     Vector2 ObstacleSize_01         = {.x = (float)GetScreenWidth() - (SpikesHitboxPosition_03.x), .y = 120.0f};
     Vector2 ObstacleSize_02         = {.x = ((float)GetScreenWidth() - (SpikesHitboxPosition_03.x) - 360.0f), .y = 180.0f};
